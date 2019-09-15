@@ -1,0 +1,642 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dagama Pereira</title>
+<link href="css/foot.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/ff.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/animate.min.css" type="text/css" rel="stylesheet">
+<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC:600" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/parallax.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style><style>
+		.rr {
+			position: relative;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		
+		.row .column {
+			box-sizing: border-box;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			position: relative;
+		}
+		
+		.row .column:before {
+			content: '';
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			left: 0;
+			height: 100%;
+		}
+		
+		.row .column .imgbox {
+			position: relative;
+		}
+		
+		.row .column .imgbox img {
+			width: 100%;
+			transition: 5s;
+		}
+		
+		.row .column:hover .imgbox img {
+			transform: scale(1.2);
+		}
+		
+		.row .column .details {
+			position: absolute;
+			bottom: -85px;
+			left: 0;
+			/*padding: 10px;*/
+			box-sizing: border-box;
+			background: rgba(0, 0, 0, .9);
+			width: 100%;
+			transition: .5s;
+		}
+		
+		.row .column:hover .details {
+			bottom: 0px;
+		}
+		
+		.row .column .details h3 {
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			color: #F1F1F1;
+			font-weight: 400px;
+			text-align: right;
+			text-transform: uppercase;
+		}
+		
+		.row .column .details h3 span {
+			margin: 0;
+			padding: 0;
+			font-size: 10px;
+			color: #f00;
+			font-weight: 900;
+			text-transform: uppercase;
+			position: relative;
+			top: -6px;
+		}
+		
+		.row .column .details ul {
+			margin: 0;
+			padding: 0;
+			float: right;
+			display: flex;
+		}
+		
+		.row .column .details ul li {
+			list-style: none;
+		}
+		
+		.row .column .details ul li a {
+			padding: 0 10px;
+			color: #fff;
+		}
+		
+		.row .column .details ul li a .fa {
+			transition: .5s;
+		}
+		
+		.row .column .details ul li a:hover .fa {
+			transform: rotateY(360deg);
+			color: #f00;
+		}
+	
+	</style></style>
+
+</head>
+
+<body>
+<div class="container">
+ <div class="row>">
+ <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+ 
+ <div class="col-sm-5">
+  <a class="navbar-brand" href="index.php"><img src="images/logo1.png" class="img-responsive" height="69px"></a>
+	 </div>
+	 <div class="col-sm-7" style="float: right">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="aboutus.php">About Us</a>
+			<a class="dropdown-item" href="services.php">Services </a>
+          <a class="dropdown-item" href="core1.php">Our core Values </a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Australian Visa
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="general.php">Australian Visa</a>
+          <a class="dropdown-item" href="business.php">Business Visa </a>
+          <a class="dropdown-item" href="individual.php">Individual Visa </a>
+          
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Consultation
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="skype.php">Skype or Google Hangout Consultation</a>
+          <a class="dropdown-item" href="fess.php">Fees Payment & Policy </a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Useful Information
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          
+          
+          <a class="dropdown-item" href="faq.php">FAQS </a>
+			<a class="dropdown-item" href="imprtlinks.php">Links </a>
+          
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.php">Contact Us</a>
+      </li>
+      
+      
+    </ul>
+  </div></div></nav></div></div>
+<div class="container-fluid" style="margin-top: 141px">
+	<div class="row">
+		<div class="col-sm-7">
+			<p style="color: black; font-family: 'Vollkorn SC', serif;font-size: 26px; text-align: center"><strong>About US</strong></p>
+			<p style="color: black;">Dagama Pereira Immigration Lawyers are a  boutique law firm that focuses on providing fully Specialised and complex Immigration Law services to meet the needs of individuals and businesses from both the local and  overseas  markets.</p>
+			<p>Our office is located in the busy hub of<b> Richmond</b> in the Bridge Road precint and<b> San Jose California (Silicon Valley).</b></p>
+			<p style="font-family: 'Vollkorn SC', serif; font-size: 24px; color: black;"><strong>Valerie Dagama Pereira - Principal Lawyer</strong> </p>
+				<p>
+			<ul class="fa-ul">	
+ 			 
+ 			 <li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>	Accredited Specialist in Immigration Law. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Deputy Chair Law Council of Australia (Migration Steering Committee). </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>27 years of expertise in Australian Migration Law.  </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered with the Supreme Court of Victoria. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered to Practice – Federal Circuit Court of Australia, Federal court of Australia. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered as a Migration Agent with the Office of Migration Agents  Registration Authority Australia. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Nominated Best Lawyer in Immigration Law 2019. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Nominated Best Lawyer in Immigration Law 2020. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Nominated Lawyer of the year in Immigration Law in Melbourne  2020. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Member of the Law Institute of Australia.  </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Ex Chair of the Migration Law Committee, Law Institute of Victoria. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Member of the  Executive Committee of the Institutes’ Migration Law Committee. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Member of the Law Council of Australia’s Migration Law Committee Steering Committee – Federal Litigation and Dispute Resolution Section. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>	Member of Administrative Law and Human Rights Committee. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Past  Deputy Chair Administrative Law and Human Rights Committee. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Member of Accredited Specialisation (Immigration law) Education. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered  as a Foreign Legal Consultant with the State Bar of California. </li>
+			
+ 			 </ul>
+			</p>
+			
+			<p style="font-family: 'Vollkorn SC', serif; font-size: 24px; color: black;"><strong>Glenn Joseph Pereira</strong> </p>
+					<p>
+			<ul class="fa-ul">	
+ 			 
+ 			 <li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Associate Lawyer in Immigration & Tech Entrepreneurship. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered with the Supreme Court of Victoria. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered to Practice – Federal Circuit Court of Australia, Federal court of Australia.  </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered to Practice – High Court of Australia. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Registered as a Migration Agent with the Office of Migration Agents  Registration Authority Australia – 27 years. </li>
+				<li style="color: black;"><i class="fa-li fa fa-angle-double-right"></i>Tech Entrepreneur. </li>
+				
+ 			 </ul>
+			</p>
+			<p><a href="contact.php">Contact us</a> directly to make an appointment and arrange a consultation.</p>
+			
+			<p style="font-family: 'Vollkorn SC', serif; font-size: 24px; color: black;"><strong>Specialist Advice & Representation</strong></p>
+			<p>Some of our Services include:</p>
+			<p>
+			<ul class="fa-ul">	
+ 			 
+ 			 <li style="color: black;"><i class="fa-li fa fa-check-square"></i>Working with clients around the globe through SKYPE.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We understand that we are dealing with individual clients around the globe with different cultural and social backgrounds.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>Each client is treated as an individual and we analyse the individual issues and problems based on documentation and circumstances within the scope of the Law.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We represent clients for both permanent or temporary residence in the preparation and lodgement of visa applications.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We carefully analyse each individual immigration supporting documents when making legal submissions.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We will lodge and co-ordinate your application with DIBP and Skills assessing bodies until a primary decision is made.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We represent clients at Merits Review to the AAT.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We represent clients for judicial review at the Federal Circuit Court (Formerly Federal Magistrates) or Federal Court or High Court after we have briefed counsel and receive confirmation that there are grounds for a judicial review or appeal.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>Consultation and advice for a fee is conducted via an appointment either in our office, via telephone, via SKYPE. Please contact our offices for appointment or to arrange a telephone or SKYPE appointment.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>If required, we provide written consultation and advice for a fee.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We have in depth knowledge of Immigration Law.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We analyse your case, provide immigration advice and strategy for success.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We provide comprehensive Immigration law advice.</li>
+			<li style="color: black;"><i class="fa-li fa fa-check-square"></i>We prepare your application professionally.</li>
+ 			 </ul>
+			</p>
+			
+		</div>
+	
+
+
+	
+		<div class="col-sm-5">
+			<h3 style=" font-family: 'Vollkorn SC', serif; font-size:26px; margin-top: 10px; "><strong>Areas Of Practice</strong></h3>
+	
+	
+	<div class="accordion" id="accordionExample" style="margin-top: 30px;">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Significant Investor Visa
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        $5 million investor visa
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Business Visas
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       Temporary work visas RSMS Employer Nomination Scheme Business Owner Investor visa
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Skilled GSM
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+       Onshore and Offshore GSM Independent & Family Sponsor
+      </div>
+    </div>
+  </div>
+   <div class="card">
+    <div class="card-header" id="headingfive">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+          Family Immigration
+        </button>
+      </h2>
+    </div>
+    <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+      <div class="card-body">
+        Partner, Parents (Contributor & Aged), Dependant Child & Orphan Relative
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingfour">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+          Student Visas
+        </button>
+      </h2>
+    </div>
+    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+      <div class="card-body">
+        School, Vocational Education, University (Undergrad, Postgraduate)
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingsix">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+          Visitor Visas
+        </button>
+      </h2>
+    </div>
+    <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+      <div class="card-body">
+        Short Stay, Long Stay, Family sponsored, Working Holiday
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingsi">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesi" aria-expanded="false" aria-controls="collapsesi">
+          Provisonal Skilled Regional Visas
+        </button>
+      </h2>
+    </div>
+    <div id="collapsesi" class="collapse" aria-labelledby="headingsi" data-parent="#accordionExample">
+      <div class="card-body">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingsx">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesx" aria-expanded="false" aria-controls="collapsesx">
+          Permanent Skilled Regional Visa
+        </button>
+      </h2>
+    </div>
+    <div id="collapsesx" class="collapse" aria-labelledby="headingsx" data-parent="#accordionExample">
+      <div class="card-body">
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-header" id="headingseven">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+          Other Visas
+        </button>
+      </h2>
+    </div>
+    <div id="collapseseven" class="collapse" aria-labelledby="headingseven" data-parent="#accordionExample">
+      <div class="card-body">
+        Retirement, Transit, Medical, Treatment, Entertainment
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingeight">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+          Appeals & Judicial Review
+        </button>
+      </h2>
+    </div>
+    <div id="collapseeight" class="collapse" aria-labelledby="headingeight" data-parent="#accordionExample">
+      <div class="card-body">
+        Administrative Appeal Tribunal, Federal Circuit Court, Federal Court and High Court.
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-header" id="headingnine">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+          Character Submissions
+        </button>
+      </h2>
+    </div>
+    <div id="collapsenine" class="collapse" aria-labelledby="headingnine" data-parent="#accordionExample">
+      <div class="card-body">
+       Responses to notifications under section 501 of intention to refuse or cancel visa.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingten">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+          Ministerial Intervention
+        </button>
+      </h2>
+    </div>
+    <div id="collapseten" class="collapse" aria-labelledby="headingten" data-parent="#accordionExample">
+      <div class="card-body">
+        Submissions under ss 351 and 417 of the Migration Act 1958, seeking Ministerial intervention in the public interest.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingeleven">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+         Criminal offences 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseeleven" class="collapse" aria-labelledby="headingeleven" data-parent="#accordionExample">
+      <div class="card-body">
+       Magistrates’ and County court matters.
+      </div>
+    </div>
+  </div>
+  
+</div>
+		</div>
+		
+		
+		
+		</div></div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<p style="font-family: 'Vollkorn SC', serif; font-size: 26px; color: black;"><strong>Legal Professional Privilege</strong></p>
+			<p style="color: black">Our Accredited Immigration Law Specialist and Lawyer can claim the right to legal professional privilege as a Lawyer. Hence lawful communications from a client are kept confidential and protected in most situations. A Registered Migration Agent (non-Lawyer) cannot claim legal professional privilege(LPP).</p>
+			<p style="font-family: 'Vollkorn SC', serif; font-size: 26px; color: black;"><strong>Trust Money</strong></p>
+			<p style="color: black">Only Lawyers are permitted to hold a Trust fund which is subject to supervision, regulation and annual audit by the Law Institute of Victoria and the Legal Services Board. There are strict statutory requirement for handling and operations of Trust money prescribed by the regulatory authority. Registered Migration Agent (non-Lawyer) do not operate a Statutory Trust Fund.</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	
+			<div class="row">
+			<div class="col-xs-12 col-lg-12 col-sm-12">
+			
+				<h2 style="text-align: center; font-family: 'Vollkorn SC', serif; font-size: 31px; color: black">Our Team</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" >
+		<div class="container">
+			<div class="row">
+				
+				<div class="column col-sm-3" style="padding: 10px;">
+					<div class="imgbox">
+						<img src="images/valerie.jpg" class="img-responsive img-thumbnail" style="padding: 7px;">
+					</div>
+					<div class="details">
+						<h3 >Valerie Dagama Pereira<br><span>Accredited Specialist in Immigration 
+							</span></h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="column col-sm-3" style="padding: 10px;">
+					<div class="imgbox">
+						<img src="images/glen.jpg" class="img-responsive img-thumbnail" style="padding: 7px;">
+					</div>
+					<div class="details">
+						<h3>Glenn Joseph Pereira<br><span>Australian Lawyer & Tech Entrepreneur</span></h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="column col-sm-3" style="padding: 10px;">
+					<div class="imgbox">
+						<img src="images/valerie.jpg" class="img-responsive img-thumbnail" style="padding: 7px;">
+					</div>
+					<div class="details">
+						<h3 >Melanie D’souza<br><span>Office Manager 
+							</span></h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="column col-sm-3" style="padding: 10px;">
+					<div class="imgbox">
+						<img src="images/glen.jpg" class="img-responsive img-thumbnail" style="padding: 7px;">
+					</div>
+					<div class="details">
+						<h3>Karsten Dagama Pereira<br><span>Legal Practice Manager</span></h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!-- Footer -->
+	<section id="footer" style="margin-top: 35px;">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h5>Contact Details</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.php" >Australia:</a></li>
+						<li><a href="index.php"><i class="fa fa-map-marker"></i>Unit 12, 1 Bromham Place Richmond Vic 3121</a></li>
+						<li><a href="index.php"><i class="fa fa-phone"></i>T: 0394281198  M: 0412356786 </a></li>
+						<li><a href="index.php">USA:</a></li>
+						<li><a href=""><i class="fa fa-map-marker"></i>2722 Forino Lane, No. 2, San Jose CS 95111 USA</a></li>
+						<li><a href="index.php"><i class="fa fa-phone"></i> T: 408 335 7802 M: 310 343 0930</a></li>
+						<li><a href="index.php"><i class="fa fa-skype"></i> Skype: dagama.pereirausa</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="aboutus.php"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="core1.php"><i class="fa fa-angle-double-right"></i>Our Core Values</a></li>
+						<li><a href="faq.php"><i class="fa fa-angle-double-right"></i>FAQS</a></li>
+						<li><a href="contact.php" title=""><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="fess.php"><i class="fa fa-angle-double-right"></i>Fees Payment & Pricing</a></li>
+						<li><a href="business.php"><i class="fa fa-angle-double-right"></i>Business Visa</a></li>
+						<li><a href="spons.php"><i class="fa fa-angle-double-right"></i>Sponsoring Employees</a></li>
+						<li><a href=""><i class="fa fa-angle-double-right"></i>Book an Appointment</a></li>
+						<li><a href="imprtlinks.php" title=""><i class="fa fa-angle-double-right"></i>Important Links</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">&copy; COPYRIGHT DAGAMA PEREIRA AND ASSOCIATES PTY LTD 2016. ALL RIGHTS RESERVED. | PRIVACYPOLICY</p>
+					<p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="" target="_blank">DAGAMA PEREIRA</a></p>
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+</body>
+</html>

@@ -1,0 +1,86 @@
+/*-- contact-section --*/
+ .my-form .form-control {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+section.agileits-contactus {
+    padding: 70px 0;
+}
+address {
+    line-height: 28px;
+    font-size: 14px;
+    color: #525252;
+}
+strong.bold {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 3px;
+	color:#000;
+}
+.agileits-contactus h4,.contact-us h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f7475;
+    text-transform: uppercase;
+}
+.my-form button {
+    color: #fff1f1;
+    background-color: #007bff;
+    border: none;
+	letter-spacing:2px;
+	font-size:15px;
+	padding:10px 0;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+.my-form button:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #9f772e;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+a.mail {
+    font-size: 14px;
+    color: #139596;
+}
+ul.agileits-company-social li {
+	display:inline-block;
+	margin-right:3px;
+}
+.agileits-company-social a {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  text-align: center;
+  background: #007bff;
+  color: #fff; }
+
+.agileits-company-social a:hover {
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+	background-color : #9f772e;
+ }
+ textarea.form-control {
+    height: 175px;
+}
+.map iframe{
+	width: 100%;
+	min-height: 450px;
+	border: 0;
+}
+
+ /*-- //contact-section --*/
+ 
